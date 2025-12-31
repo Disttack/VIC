@@ -134,7 +134,7 @@ public class vic_VerliokaAutofireAI implements AutofireAIPlugin {
             this.missile = missile;
             this.angle = angle;
             this.score = missile.getDamageAmount() / missile.getHitpoints();
-            if (missile.getDamageType() == DamageType.FRAGMENTATION) this.score *= 0.25;
+            if (missile.getDamageType() == DamageType.FRAGMENTATION) this.score *= 0.25f;
         }
 
         MissileAPI missile;
