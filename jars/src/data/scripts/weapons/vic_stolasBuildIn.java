@@ -307,8 +307,8 @@ public class vic_stolasBuildIn implements EveryFrameWeaponEffectPlugin, OnFireEf
         if (ship.isEngineBoostActive()) globalThrustMulti *= 1.25f;
         if (newVector.y == 1 || newVector.x < 0 || turn == -1) {
             float thrustMulti = 0.75f * globalThrustMulti;
-            if (newVector.x > 0) thrustMulti *= 0.5;
-            if (turn == 1) thrustMulti *= 0.5;
+            if (newVector.x > 0) thrustMulti *= 0.5f;
+            if (turn == 1) thrustMulti *= 0.5f;
             thrust(BR, thrustMulti);
             thrust(MR, thrustMulti);
             thrust(FR, thrustMulti);
@@ -320,8 +320,8 @@ public class vic_stolasBuildIn implements EveryFrameWeaponEffectPlugin, OnFireEf
 
         if (newVector.y == 1 || newVector.x > 0 || turn == 1) {
             float thrustMulti = 0.75f * globalThrustMulti;
-            if (newVector.x < 0) thrustMulti *= 0.5;
-            if (turn == -1) thrustMulti *= 0.5;
+            if (newVector.x < 0) thrustMulti *= 0.5f;
+            if (turn == -1) thrustMulti *= 0.5f;
             thrust(BL, thrustMulti);
             thrust(ML, thrustMulti);
             thrust(FL, thrustMulti);
