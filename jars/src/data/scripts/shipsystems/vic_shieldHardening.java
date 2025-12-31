@@ -42,10 +42,10 @@ public class vic_shieldHardening extends BaseShipSystemScript {
                                     actualDamage *=2;
                                     break;
                                 case HIGH_EXPLOSIVE:
-                                    actualDamage *=0.5;
+                                    actualDamage *=0.5f;
                                     break;
                                 case FRAGMENTATION:
-                                    actualDamage *=0.25;
+                                    actualDamage *=0.25f;
                                     break;
                             }
                             /*
