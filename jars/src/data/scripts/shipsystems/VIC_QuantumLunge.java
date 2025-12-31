@@ -243,7 +243,7 @@ public class VIC_QuantumLunge extends BaseShipSystemScript {
 
             if (!atLeastOneUnder || safeTime >= maxSafeTime) {
                 ship.setApplyExtraAlphaToEngines(false);
-                if (effectLevel <= 0.9) ship.setPhased(false);
+                if (effectLevel <= 0.9f) ship.setPhased(false);
                 float visualLevel = (0.5f * effectLevel);
                 ship.setJitter(ship, new Color(100, 165, 255, 75), effectLevel, Math.round(15 * visualLevel), 15, 60 * visualLevel);
 
@@ -347,7 +347,7 @@ public class VIC_QuantumLunge extends BaseShipSystemScript {
                 if (Math.random() < 0.25f + PseudoRandom) {
                     PseudoRandom = 0f;
                     Vector2f randomPoint;
-                    if (Math.random() < 0.5) {
+                    if (Math.random() < 0.5f) {
                         randomPoint = MathUtils.getRandomPointInCone(ExpPos, 450, StarFacing - 65, StarFacing - 115);
                     } else {
                         randomPoint = MathUtils.getRandomPointInCone(ExpPos, 450, StarFacing + 65, StarFacing + 115);
@@ -372,7 +372,7 @@ public class VIC_QuantumLunge extends BaseShipSystemScript {
                         engine.removeEntity(Steroid);
                     }
                 } else {
-                    PseudoRandom += 0.15;
+                    PseudoRandom += 0.15f;
                 }
             }
 
